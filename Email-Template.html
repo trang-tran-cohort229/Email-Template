@@ -6,88 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bd721e5616.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Email-Template.css">
 </head>
 <body>
     <div class="container">
-        <div class="col1 col-lg-2 side-menu">
-            <div class="row11">
-                <h1 class="logo">TMAIL</h1>
-                <h5 class="welcome">Welcome, Trang!</h5>
-            </div>
-            <ul class="list-group">
-                <li class="list-group-item inbox">Inbox</li>
-                <li class="list-group-item starred">Starred</li>
-                <li class="list-group-item sent">Sent</li>
-                <li class="list-group-item drafts">Drafts</li>
-                <li class="list-group-item important">Important</li>
-                <li class="list-group-item spam">Spam</li>
-                <li class="list-group-item trash">Trash</li>
-                <button type="button" class="btn-primary">COMPOSE</button>
-            </ul>
-        </div>
-            
-        <div class="col2 col-lg-4 mid menu">
-            <div class="row21">
-                <h5 class="inbox-menu">INBOX</h5>
-            </div>
-            <div class="row22">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <form class="btn-info" action="action_page.php">
-                    <input type="text" class="form-control" placeholder="Search for emails" name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
+        <div class="row">
+            <div class="col-lg-2 col-md-4 d-none d-lg-block side-menu">
+                <div class="row11">
+                    <h1 class="logo-name">
+                        <span style="color: #FF0505">T</span>
+                        <span style="color: #3F8E1A">M</span>
+                        <span style="color: #8C1A81">A</span>
+                        <span style="color: #1A2FEF">I</span>
+                        <span style="color: #F57B0A">L</span>
+                    </h1>
+                    <h5 class="welcome">Welcome, Trang!</h5>
                 </div>
-            <div class="row23 email-info">
-
+                <button class="btn-group inbox"><i class="fa fa-inbox"></i>&nbsp&nbsp&nbsp&nbsp&nbspInbox</button>
+                <button class="btn-group starred"><i class="fa fa-star-o"></i>&nbsp&nbsp&nbsp&nbsp&nbspStarred</button>
+                <button class="btn-group sent"><i class="fa fa-send-o"></i>&nbsp&nbsp&nbsp&nbsp&nbspSent</button>
+                <button class="btn-group drafts"><i class="fa fa-file-signature"></i>&nbsp&nbsp&nbsp&nbsp&nbspDrafts</button>
+                <button class="btn-group important"><i class="fa fa-exclamation-circle"></i>&nbsp&nbsp&nbsp&nbsp&nbspImportant</button>
+                <button class="btn-group spam"><i class="fa fa-remove"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSpam</button>
+                <button class="btn-group trash"><i class="fa fa-trash"></i>&nbsp&nbsp&nbsp&nbsp&nbspTrash</button>
+                <button type="button" class="btn-primary compose">COMPOSE</button>
             </div>
-            <div class="row24 email-info">
-
-            </div>
-            <div class="row25 email-info">
-
-            </div>
-            <div class="row26 email-info">
-
-            </div>
-            <div class="row27 email-info">
-
-            </div>
-
-        </div>
-
-        <div class="col3 col-lg-6 email-detail">
-            <div class="row31">
-                <div class="from-to">
-                    <p class="from">From: GitHub.com <noreply@github.com></p>
-                    <p class="to">To: trangtran.cohort229@tmail.com</p>
+            <div class="col-lg-4 col-md-8 mid-menu">
+                <div class="row21">
+                    <h4 class="inbox-icon"><i class="fa fa-inbox"></i></h4>
+                    <h5 class="inbox-menu">INBOX</h5>
                 </div>
-
-
+                <div class="row22">
+                    <form class="btn-info" action="action_page.php">
+                        <input type="text" class="form-control" placeholder="Search for emails" name="search">
+                    </form>
+                </div>
+                <div class="row23 email-info">
+                    <span class="date">Sep 29</span>
+                    <h5 class="email-info-title">WordPress.com</h5>
+                    <button class="btn-check"><i class="fa fa-star-o"></i></button>
+                    <p class="email-info-text">Welcome to WordPress.com ...</p>
+                </div>
+                <div class="row24 email-info">
+                    <span class="date">Sep 28</span>
+                    <h5 class="email-info-title">Wix.com</h5>
+                    <button class="btn-check"><i class="fa fa-star-o"></i></button>
+                    <p class="email-info-text">Welcome to Wix. It’s your time ...</p>
+                </div>
+                <div class="row25 email-info">
+                    <span class="date">Sep 28</span>
+                    <h5 class="email-info-title">Canva</h5>
+                    <button class="btn-check"><i class="fa fa-star-o"></i></button>
+                    <p class="email-info-text">Meet Canva, your new design tool.</p>
+                </div>
+                <div class="row26 email-info">
+                    <span class="date">Sep 20</span>
+                    <h5 class="email-info-title">GitHub</h5>
+                    <button class="btn-check"><i class="fa fa-star-o"></i></button>
+                    <p class="email-info-text">Welcome to GitHub!</p>
+                </div>
+                <div class="row27 email-info">
+                    <span class="date"> Aug 08</span>
+                    <h5 class="email-info-title">LinkedIn</h5>
+                    <button class="btn-check"><i class="fa fa-star-o"></i></button>
+                    <p class="email-info-text">You have 2 new invitations</p>
+                </div>
             </div>
-            <div class="row32 email-content">
-                <p class="content1">Welcome to GitHub!</p>
-                <p class="content2">You’re the newest member in this community of over
-                    83 million people who use GitHub to host and review
-                    code, manage projects and build solfware.</p>
-                <p class="content3">Get started:
-
-                    Complete your profile
-                    
-                    Set up your computer for GitHub
-                    
-                    Learn more about using GitHub</p>
-                <p class="content3">Ready to work on project?
-
-                    Create a new repository
-                    
-                    Import an existing repository
-                    
-                    Explore open source projects</p>
-                
+            <div class="col-lg-6 col-md-12 email-detail">
+                <div class="row31">
+                    <div class="from-to">
+                        <p class="from">From: GitHub.com <span style="color: #6D6879"> &#x3cnoreply@github.com&#x3e</span></p>
+                        <p class="to">To: trangtran.cohort229@tmail.com</p>
+                        <button class="btn"><i class="fa-sharp fa-solid fa-trash-can"></i></button>
+                        <button class="btn"><i class="fa-sharp fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+                <div class="row32 email-content">
+                    <p class="content1">Welcome to GitHub!</p>
+                    <p class="content2">You’re the newest member in this community of over 83 million people who use GitHub to host and review code, manage projects and build solfware.</p>
+                    <div class="line"></div>
+                    <p class="content3">Get started:<br>
+                    <span style="color:#349b89">Complete your profile<br>
+                        Set up your computer for GitHub<br>
+                        Learn more about using GitHub</span></p>
+                    <p class="content4">Ready to work on project?<br>
+                    <span style="color: #349b89">Create a new repository<br>                 
+                        Import an existing repository<br>
+                        Explore open source projects</span></p>
+                </div>
+                <button type="button" class="btn-primary reply">REPLY</button>
+                <button type="button" class="btn-primary forward">FORWARD</button>
             </div>
         </div>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
