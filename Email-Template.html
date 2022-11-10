@@ -11,19 +11,31 @@
     <link rel="stylesheet" href="Email-Template.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 col-md-4 d-none d-lg-block side-menu">
-                <div class="row11">
-                    <h1 class="logo-name">
-                        <span style="color: #FF0505">T</span>
-                        <span style="color: #3F8E1A">M</span>
-                        <span style="color: #8C1A81">A</span>
-                        <span style="color: #1A2FEF">I</span>
-                        <span style="color: #F57B0A">L</span>
-                    </h1>
-                    <h5 class="welcome">Welcome, Trang!</h5>
+            <div class="col-lg-3 order-lg-0 col-md-5 order-md-0 col-sm-5 order-sm-0 col11">
+                <h1 class="logo-name">
+                    <span style="color: #FF0505">T</span>
+                    <span style="color: #3F8E1A">M</span>
+                    <span style="color: #8C1A81">A</span>
+                    <span style="color: #1A2FEF">I</span>
+                    <span style="color: #F57B0A">L</span>
+                </h1>
+                <h5 class="welcome">Welcome, Trang!</h5>
+            </div>
+            <div class="col-lg-4 order-lg-1 col-md-7 order-md-1 col-sm-7 order-sm-1 d-none d-sm-block col12">
+                <h5 class="inbox-icon"><i class="fa fa-inbox"></i></h5>
+                <h5 class="inbox-menu">INBOX</h5>
+            </div>
+            <div class="col-lg-5 order-lg-2 col-md-12 order-md-4 col-sm-12 order-sm-4 d-none d-sm-block col13">
+                <div class="from-to">
+                    <p class="from">From: GitHub.com <span style="color: #9f9f9f"> &#x3cnoreply@github.com&#x3e</span></p>
+                    <p class="to">To: trangtran.cohort229@tmail.com</p>
+                    <button class="btn"><i class="fa-sharp fa-solid fa-trash-can"></i></button>
+                    <button class="btn"><i class="fa-sharp fa-solid fa-ellipsis"></i></button>
                 </div>
+            </div>
+            <div class="col-lg-3 order-lg-3 col-md-5 order-md-2 col-sm-5 order-sm-2 d-none d-sm-block col21">
                 <button class="btn-group inbox"><i class="fa fa-inbox"></i>&nbsp&nbsp&nbsp&nbsp&nbspInbox</button>
                 <button class="btn-group starred"><i class="fa fa-star-o"></i>&nbsp&nbsp&nbsp&nbsp&nbspStarred</button>
                 <button class="btn-group sent"><i class="fa fa-send-o"></i>&nbsp&nbsp&nbsp&nbsp&nbspSent</button>
@@ -33,60 +45,47 @@
                 <button class="btn-group trash"><i class="fa fa-trash"></i>&nbsp&nbsp&nbsp&nbsp&nbspTrash</button>
                 <button type="button" class="btn-primary compose">COMPOSE</button>
             </div>
-            <div class="col-lg-4 col-md-8 mid-menu">
-                <div class="row21">
-                    <h4 class="inbox-icon"><i class="fa fa-inbox"></i></h4>
-                    <h5 class="inbox-menu">INBOX</h5>
-                </div>
-                <div class="row22">
+            <div class="col-lg-4 order-lg-4 col-md-7 order-md-3 col-sm-7 order-sm-3 col22">
+                <div class="row221 w-100">
                     <form class="btn-info" action="action_page.php">
                         <input type="text" class="form-control" placeholder="Search for emails" name="search">
                     </form>
                 </div>
-                <div class="row23 email-info">
+                <div class="row222 w-100 email-info">
                     <span class="date">Sep 29</span>
                     <h5 class="email-info-title">WordPress.com</h5>
                     <button class="btn-check"><i class="fa fa-star-o"></i></button>
                     <p class="email-info-text">Welcome to WordPress.com ...</p>
                 </div>
-                <div class="row24 email-info">
+                <div class="row223 w-100 email-info">
                     <span class="date">Sep 28</span>
                     <h5 class="email-info-title">Wix.com</h5>
                     <button class="btn-check"><i class="fa fa-star-o"></i></button>
                     <p class="email-info-text">Welcome to Wix. It’s your time ...</p>
                 </div>
-                <div class="row25 email-info">
+                <div class="row224 w-100 email-info">
                     <span class="date">Sep 28</span>
                     <h5 class="email-info-title">Canva</h5>
                     <button class="btn-check"><i class="fa fa-star-o"></i></button>
                     <p class="email-info-text">Meet Canva, your new design tool.</p>
                 </div>
-                <div class="row26 email-info">
+                <div class="row225 w-100 email-info">
                     <span class="date">Sep 20</span>
                     <h5 class="email-info-title">GitHub</h5>
                     <button class="btn-check"><i class="fa fa-star-o"></i></button>
                     <p class="email-info-text">Welcome to GitHub!</p>
                 </div>
-                <div class="row27 email-info">
+                <div class="row226 w-100 email-info">
                     <span class="date"> Aug 08</span>
                     <h5 class="email-info-title">LinkedIn</h5>
                     <button class="btn-check"><i class="fa fa-star-o"></i></button>
                     <p class="email-info-text">You have 2 new invitations</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 email-detail">
-                <div class="row31">
-                    <div class="from-to">
-                        <p class="from">From: GitHub.com <span style="color: #6D6879"> &#x3cnoreply@github.com&#x3e</span></p>
-                        <p class="to">To: trangtran.cohort229@tmail.com</p>
-                        <button class="btn"><i class="fa-sharp fa-solid fa-trash-can"></i></button>
-                        <button class="btn"><i class="fa-sharp fa-solid fa-ellipsis"></i></button>
-                    </div>
-                </div>
-                <div class="row32 email-content">
+            <div class="col-lg-5 order-lg-5 col-md-12 order-md-5 col-sm-12 order-sm-5 d-none d-sm-block col23">
+                <div class="row231 w-100 email-content">
                     <p class="content1">Welcome to GitHub!</p>
                     <p class="content2">You’re the newest member in this community of over 83 million people who use GitHub to host and review code, manage projects and build solfware.</p>
-                    <div class="line"></div>
                     <p class="content3">Get started:<br>
                     <span style="color:#349b89">Complete your profile<br>
                         Set up your computer for GitHub<br>
